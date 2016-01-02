@@ -610,6 +610,7 @@ body {
     .intro-container > .intro-block > .tagline {
       font-size: 2.8em; }
     .intro-container > .intro-block > .schedule input {
+      background-color: #45c3f3;
       font-size: 1.2em;
       border-radius: 20px; }
 
@@ -620,6 +621,7 @@ body {
   background-attachment: scroll;
   height: 700px;
   color: #fff;
+  border-bottom: 1px solid #383838;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
@@ -742,5 +744,205 @@ body {
         padding-left: 30px;
         font-size: 1.7em;
         border-left: 1px solid #999; }
+
+.image-container {
+  height: 1100px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column; }
+  .image-container > .image-inner-container {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column; }
+    .image-container > .image-inner-container > .image {
+      background-color: #fff;
+      width: 60%;
+      height: 580px; }
+    .image-container > .image-inner-container > .col-2 {
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column;
+      margin-top: 70px;
+      width: 50%; }
+      .image-container > .image-inner-container > .col-2 > div {
+        margin-top: 25px; }
+      .image-container > .image-inner-container > .col-2 > .phone-number {
+        color: #45c3f3;
+        font-size: 1.85em; }
+
+.services-container {
+  text-align: center;
+  height: 1100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column; }
+  .services-container > .services-inner-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+    .services-container > .services-inner-container > .services-heading h2 {
+      font-size: 2.3em;
+      margin-top: 20px; }
+    .services-container > .services-inner-container > .services-heading p {
+      color: #45c3f3;
+      font-size: 1.3em; }
+    .services-container > .services-inner-container > .image-gallery {
+      margin: 20px auto;
+      width: 58.5%;
+      height: 590px;
+      display: flex;
+      flex-flow: row wrap; }
+      .services-container > .services-inner-container > .image-gallery > .row {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-grow: 1; }
+      .services-container > .services-inner-container > .image-gallery > .col-2-3 {
+        width: 66.5%;
+        flex-grow: 2; }
+      .services-container > .services-inner-container > .image-gallery > .col-1-3 {
+        width: 33.5%;
+        flex-grow: 1; }
+    .services-container > .services-inner-container > .services-button input {
+      background-color: #45c3f3;
+      border-radius: 30px;
+      height: 60px;
+      width: 25%;
+      margin-top: 40px; }
 
 /*# sourceMappingURL=main.css.map */
