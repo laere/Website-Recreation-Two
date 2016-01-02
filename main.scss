@@ -1,0 +1,138 @@
+
+////IMPORTS//////////////////////////////////////////////////////
+@import '_normalize';
+@import 'bourbon/bourbon';
+@import 'base/base';
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic,900,900italic,400italic);
+
+@font-face {
+  font-family: 'Geom';
+  src: url('Daily UI/GEOM_download.ai');
+}
+
+////VARIABLES//////////////////////////////////////////////////////
+$white: #fff;
+$black: #000;
+$main-font: 'Geom', 'Open Sans', sans-serif;
+
+
+////BASESTYLINGS//////////////////////////////////////////////////////
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  color: $white;
+}
+body {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+////HEADER/NAV//////////////////////////////////////////////////////
+.nav-container {
+  background-color: rgba(0,0,0,0.6);
+  color: $white;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+    .nav ul {
+      display: flex;
+      flex-flow: row nowrap;
+      @include padding(null 40px null null);
+        li {
+          padding: 0 30px;
+        }
+    }
+     .logo {
+      @include padding(null null null 30px);
+      height: 40px;
+      font-size: 2em;
+    }
+}
+
+////FIRST SECTION//////////////////////////////////////////////////////
+
+.intro-container {
+  background: url('https://d3i33bsuac4yh9.cloudfront.net/wp-content/uploads/sites/733/2014/11/bg_banner_01_r3.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top-center;
+  @include align-items(center);
+  @include display(flex);
+  @include flex-direction(column);
+  color: $white;
+  height: 1000px;
+    > .intro-block {
+      @include margin(300px null null null);
+      text-align: center;
+      > .intro {
+        font-size: 5em;
+        font-weight: normal;
+      }
+      > .tagline {
+        font-size: 2.8em;
+
+      }
+      > .schedule  input {
+        font-size: 1.2em;
+        border-radius: 20px
+      }
+    }
+}
+
+
+////SECOND SECTION//////////////////////////////////////////////////////
+
+.about-container {
+  background: url('https://d3i33bsuac4yh9.cloudfront.net/wp-content/uploads/sites/733/2015/01/Section2_BG_R1.jpg') no-repeat;
+  background-size: cover;
+  background-position: top-center;
+  background-attachment: scroll;
+  height: 700px;
+  color: $white;
+  @include justify-content(center);
+  @include align-items(center);
+  @include display(flex);
+  @include flex-direction(column);
+  > .inner-container {
+      @include justify-content(center);
+      @include align-items(center);
+      @include display(flex);
+      @include flex-direction(column);
+      text-align: center;
+      width: 70%;
+      > .logo-two {
+        font-size: 2.8em;
+        @include margin(null null 60px null);
+      }
+      > .col {
+        @include align-items(center);
+        @include display(flex);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        text-align: left;
+        > .about {
+          color: #c8c8c8;
+          width: 58%;
+        }
+        > .tagline-two {
+          color: #45c3f3;
+          width: 35%;
+          @include padding(null null null 30px);
+          font-size: 1.7em;
+          border-left: 1px solid #999;
+        }
+      }
+  }
+}
+
+////THIRD SECTION//////////////////////////////////////////////////////
