@@ -14,6 +14,7 @@
 $white: #fff;
 $black: #000;
 $blue: #45c3f3;
+$darkblue: #00adef;
 $main-font: 'Geom', 'Open Sans', sans-serif;
 
 
@@ -200,7 +201,6 @@ body {
               font-size: 1.3em;
             }
         }
-
         > .image-gallery {
 
           margin: 20px auto;
@@ -221,11 +221,8 @@ body {
                 width: 33.5%;
                 flex-grow: 1
               }
-
-
         }
-
-          >.services-button input {
+          > .services-button input {
               background-color: $blue;
               border-radius: 30px;
               height: 60px;
@@ -236,3 +233,89 @@ body {
 }
 
 ////TESTIMONIALS SECTION//////////////////////////////////////////////////////
+
+.testimonials-container {
+  height: 800px;
+  background: url('https://d3i33bsuac4yh9.cloudfront.net/wp-content/uploads/sites/733/2014/12/Section5_GroupBG.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  color: $white;
+  text-align: center;
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+    > .test-inner-container {
+      width: 60%;
+      @include display(flex);
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+        > .test-intro {
+          font-size: 1.3em;
+          @include margin(30px null null null);
+        }
+        > h2 {
+          color: $blue;
+          font-size: 2.9em;
+          @include margin(30px null null null);
+        }
+        > input {
+          width: 160px;
+          height: 50px;
+          background-color: $blue;
+          border-radius: 30px;
+        }
+        > strong {
+          @include margin(30px null null null);
+        }
+    }
+}
+
+////SOCIAL MEDIA ICONS SECTION//////////////////////////////////////////////////////
+
+.social-media-container {
+  @include margin(150px null null null);
+  background-color: $darkblue;
+  height: 135px;
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-items(center);
+    > .social-icons li {
+      display: inline-block;
+      @include padding(null 30px);
+        &:hover {
+          opacity: .8;
+        }
+    }
+}
+
+////FOOTER SECTION//////////////////////////////////////////////////////
+.footer-container {
+  background-color: $black;
+  height: 330px;
+  color: $white;
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+    > .footer-inner-container {
+      @include display(flex);
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      @include margin(null null null 30px);
+      @include padding(null null null 20px);
+      width: 45%;
+      font-size: .9em;
+      border-bottom: 1px solid $white;
+
+      > .col-big {
+        flex-basis: 60%;
+      }
+       > .col-small {
+         flex-basis: 25%;
+         @include padding(null 10px);
+       }
+    }
+}
